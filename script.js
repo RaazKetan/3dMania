@@ -34,6 +34,8 @@ locomotive();
 
 
 const canvas = document.querySelector("canvas");
+
+// getting all the 2d tools 
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -46,6 +48,7 @@ window.addEventListener("resize", function () {
   render();
 });
 
+// adding the images
 function files(index) {
   var data = `
      ./male0001.png
@@ -352,7 +355,8 @@ function files(index) {
   return data.split("\n")[index];
 }
 
-const frameCount = 300;
+// frame count  == number of images present
+const frameCount = 350;
 
 const images = [];
 const imageSeq = {
