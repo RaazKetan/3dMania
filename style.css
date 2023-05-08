@@ -25,21 +25,27 @@ html,body{
 }
 #page1
 {
+    position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    color: #f1f1f1;
+
 }
 #page2
 {
+    position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: indianred;
+    color: #f1f1f1;
+
 }
 #page3
 {
+    position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    color: #f1f1f1;
+
 }
 canvas{
     position: relative;
@@ -123,9 +129,72 @@ canvas{
 }
 #page>h4{
     position: absolute;
-    top: 64%;
+    top: 68%;
     left: 25%;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
+}
+#page1>#right-text
+{
+    position: absolute;
+    /* color: #232323; */
+    top: 30%;
+    left: 8%;
+}
+#page1>#right-text>h3{
+    font-weight: 300;
+    color: rgb(45, 45, 45);
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+#page1>#right-text>h1{
+    padding-top: 0.5em;
+  line-height: 1.2;
+  font-size: 3em;
+  color: black;
+}
+#page1>#left-text
+{
+    line-height: normal;
+    position: absolute;
+    top:60%;
+    right: 6%;
+}
+#page1>#left-text>h1{
+    font-weight: 700;
+    color: black;
+  line-height: 1.2;
+    font-size: 2.5em;
+    text-align-last: right;
+}
+#page2>#text1
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page2>#text1>h3
+{
+    color: rgb(45, 45, 45);
+    font-weight: 300;
+}
+#page2>#text1>h1
+{
+    color: black;
+    line-height: 1.2;
+    font-size: 3em;
+}
+#page2>#text2
+{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+#page2>#text2>h3{
+    font-weight: 300;
+    color: black;
+    font-size: 0.8em;
+    text-align-last: right;
+    /* z-index: 10; */
 }
