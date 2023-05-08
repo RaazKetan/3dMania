@@ -356,7 +356,7 @@ function files(index) {
 }
 
 // frame count  == number of images present
-const frameCount = 350;
+const frameCount = 300;
 
 const images = [];
 const imageSeq = {
@@ -369,8 +369,10 @@ for (let i = 0; i < frameCount; i++) {
   images.push(img);
 }
 
+// apply gsap to the image sequence
 gsap.to(imageSeq, {
   frame: frameCount - 1,
+  //snap shoes which frame to show either 1 or 2 not 0.5 or 0.3
   snap: "frame",
   ease: `none`,
   scrollTrigger: {
@@ -383,6 +385,7 @@ gsap.to(imageSeq, {
   onUpdate: render,
 });
 
+// when we refresh always show the 1st image on relod
 images[1].onload = render;
 
 function render() {
@@ -409,6 +412,7 @@ function scaleImage(img, ctx) {
     img.height * ratio
   );
 }
+
 ScrollTrigger.create({
   trigger: "#page>canvas",
   pin: true,
@@ -417,8 +421,6 @@ ScrollTrigger.create({
   start: `top top`,
   end: `600% top`,
 });
-
-
 
 gsap.to("#page1",{
   scrollTrigger:{
