@@ -201,11 +201,11 @@ canvas{
     position: absolute;
     top: 30%;
     left: 8%;
-    z-index: ;
 }
 #page3>#right1>h3{
     color: black;
     font-weight: 300;
+    font-size: 0.8em;
 }
 
 #page3>#left1{
