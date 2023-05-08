@@ -145,7 +145,6 @@ canvas{
 #page1>#right-text>h3{
     font-weight: 300;
     color: rgb(45, 45, 45);
-    border-bottom: 1px solid black;
     text-transform: uppercase;
 }
 #page1>#right-text>h1{
@@ -172,7 +171,7 @@ canvas{
 {
     position: absolute;
     top: 30%;
-    left: 10%;
+    left:8%;
 }
 #page2>#text1>h3
 {
@@ -189,7 +188,7 @@ canvas{
 {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 6%;
 }
 #page2>#text2>h3{
     font-weight: 300;
@@ -197,4 +196,32 @@ canvas{
     font-size: 0.8em;
     text-align-last: right;
     /* z-index: 10; */
+}
+#page3>#right1{
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    z-index: ;
+}
+#page3>#right1>h3{
+    color: black;
+    font-weight: 300;
+}
+
+#page3>#left1{
+    position: absolute;
+    top: 55%;
+    right: 6%;
+}
+#page3>#left1>h3
+{
+    color: rgb(45, 45, 45);
+    font-weight: 300;
+}
+#page3>#left1>h1
+{
+    color: black;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.2;
 }
