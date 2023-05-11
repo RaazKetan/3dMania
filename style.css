@@ -8,7 +8,7 @@ html,body{
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 #main
@@ -29,7 +29,6 @@ html,body{
     height: 100vh;
     width: 100vw;
     color: #f1f1f1;
-
 }
 #page2
 {
@@ -46,6 +45,17 @@ html,body{
     width: 100vw;
     color: #f1f1f1;
 
+}
+
+
+.panel
+{
+    /* padding-top: 10rem; */
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    width: 100vw;
+    color: #f1f1f1;
 }
 canvas{
     position: relative;
@@ -224,4 +234,110 @@ canvas{
     font-size: 3em;
     font-weight: 700;
     line-height: 1.2;
+}
+#page4
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#page4>#first-line
+{
+    top: 5%;
+    border-left: 1px solid honeydew;
+    height: 3em;
+}
+#page4>span{
+    position: absolute;
+    top: 25%;
+    border-left: 1px solid honeydew;
+    height: 10em;
+}
+
+#page4>#set
+{
+    font-size: 3em;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+#page4>#dir
+{
+    position: absolute;
+    font-size: 2.6em;
+    top: 60%;
+    left: 24%;
+}
+#page4>#name
+{
+    position: absolute;
+    top: 14%;
+    font-weight: 900;
+    font-size: 1.8em;
+}
+#page4>#extra
+{
+    border: none;
+    position: absolute;
+    top: 20%;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+.social-menu ul{
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
 }
